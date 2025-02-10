@@ -1,11 +1,13 @@
-import './App.css'
+// import React from 'react';
+import './App.css';
+import AuthForm from './AuthForm';
 
 function App() {
   return (
-    <>
-      <p>Hello World</p>
-    </>
-  )
+    <div>
+      <AuthForm/>
+    </div>
+  );
 }
 
-export default App
+export default App;
