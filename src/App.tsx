@@ -1,13 +1,14 @@
-// import React from 'react';
-import './App.css';
-import AuthForm from './AuthForm';
+import AuthForm from './components/AuthForm';
 
 function App() {
   return (
-    <div>
-      <AuthForm/>
+    <div className="app-container">
+      {/* <Header /> */}
+      <AuthForm />
+      {/* <Footer /> */}
     </div>
   );
 }
 
 export default App;
+
