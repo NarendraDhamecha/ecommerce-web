@@ -17,11 +17,11 @@ export default function AuthForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Submitted:', formData);
-    // alert('Check the console for submitted data!');
+    // alert('Check the console for submitted data');
   };
 
   return (

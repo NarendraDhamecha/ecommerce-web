@@ -9,7 +9,7 @@ function ForgotPassword() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Reset Password Email:', email);
-    // alert('Check the console for submitted email!');
+    // alert('Check the console for submitted email');
   };
 
   return (
