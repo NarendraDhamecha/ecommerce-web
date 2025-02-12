@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/AuthForm.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function AuthForm() {
   const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate();
 
   return (
     <div className='auth-container'>
@@ -14,18 +16,18 @@ export default function AuthForm() {
         {isLogin ? (
           <div className='form'>
             <h2 className='form-title'>Login</h2>
-            <input type='email' placeholder='Email' />
-            <input type='password' placeholder='Password' />
-            <a href='#' className='forgot-password'>Forgot Password</a>
+            <input type='email' placeholder='Email' required />
+            <input type='password' placeholder='Password' required />
+            <a href='#' className='forgot-password' onClick={() => navigate('/forgot-password')}>Forgot Password?</a>
             <button className='form-btn'>Login</button>
             <p className='switch-text'>Not a Member? <span onClick={() => setIsLogin(false)}>Signup</span></p>
           </div>
         ) : (
           <div className='form'>
             <h2 className='form-title'>Signup</h2>
-            <input type='email' placeholder='Email' />
-            <input type='password' placeholder='Password' />
-            <input type='password' placeholder='Confirm Password' />
+            <input type='email' placeholder='Email' required />
+            <input type='password' placeholder='Password' required />
+            <input type='password' placeholder='Confirm Password' required />
             <button className='form-btn'>Sign Up</button>
             <p className='switch-text'>Already a Member? <span onClick={() => setIsLogin(true)}>Login</span></p>
           </div>
@@ -34,5 +36,3 @@ export default function AuthForm() {
     </div>
   );
 }
-
-

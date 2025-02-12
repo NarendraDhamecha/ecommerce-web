@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -6,16 +6,16 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #2e2e2e;
-}
-
+} */
+/* 
 .auth-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
+  width: 100%; */
   /* background-color: #2e2e2e; */
-}
+/* }
 
 .form-card {
   background: white;
@@ -30,22 +30,22 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-}
+} */
 
-.form-toggle button {
+/* .form-toggle button { */
   /* flex: 1; */
-  width: 50%;
+  /* width: 50%;
   padding: 10px;
   border: none;
   font-size: 16px;
   background: #e6e6e6;
   cursor: pointer;
   font-weight: bold;
-  color: black;
+  color: black; */
   /* border-radius: 10px 10px 0 0; */
-}
+/* } */
 
-.form-toggle .active {
+/* .form-toggle .active {
   background: #00263e;
   color: white;
 }
@@ -94,10 +94,171 @@ body {
 .switch-text span {
   color: blue;
   cursor: pointer;
-}
+} */
 
 /* .error {
   color: red;
   font-size: 12px;
   margin-bottom: 5px;
 } */
+
+
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: Arial, sans-serif; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.form-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.form-toggle button {
+  flex: 1;
+  /* width: 50%; */
+  padding: 0.6rem;
+  border: none;
+  font-size: 1rem;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  transition: 0.3s;
+  /* border-radius: 10px 10px 0 0; */
+}
+
+.form-toggle button.active {
+  background: #20405f;
+  color: #fff;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  /* border: 1px solid #333; */
+  border-radius: 5px;
+  font-size: 1rem;
+  /* background: black;
+  color: white; */
+}
+
+.form-subtext{
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.forgot-password {
+  color: blue;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.form-btn {
+  width: 100%;
+  margin-top: 5px;
+  background: #20405f;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.switch-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.switch-text span {
+  color: blue;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: #0056b3;
+}
+
+
+.forgot-password, .switch-text span {
+  color: #007bff;
+  /* color: black; */
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  /* margin-top: 50px; */
+}
+
+.forgot-password:hover, .switch-text span:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 1.5rem;
+  }
+
+  .form-toggle button {
+    font-size: 0.9rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  .form-btn {
+    font-size: 0.9rem;
+  }
+}
