@@ -1,116 +1,8 @@
-/* body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #2e2e2e;
-} */
-/* 
-.auth-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%; */
-  /* background-color: #2e2e2e; */
-/* }
-
-.form-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-}
-
-.form-toggle {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-} */
-
-/* .form-toggle button { */
-  /* flex: 1; */
-  /* width: 50%;
-  padding: 10px;
-  border: none;
-  font-size: 16px;
-  background: #e6e6e6;
-  cursor: pointer;
-  font-weight: bold;
-  color: black; */
-  /* border-radius: 10px 10px 0 0; */
-/* } */
-
-/* .form-toggle .active {
-  background: #00263e;
-  color: white;
-}
-
-.form-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  margin-bottom: 10px;
-}
-
-.form input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  background: black;
-  color: white;
-}
-
-.forgot-password {
-  color: blue;
-  display: block;
-  margin-bottom: 15px;
-  text-decoration: none;
-}
-
-.form-btn {
-  width: 100%;
-  padding: 12px;
-  background: #00263e;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.switch-text {
-  font-size: 14px;
-  font-weight: bold;
-  color: black;
-}
-
-.switch-text span {
-  color: blue;
-  cursor: pointer;
-} */
-
-/* .error {
-  color: red;
-  font-size: 12px;
-  margin-bottom: 5px;
-} */
-
-
-
-
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   /* font-family: Arial, sans-serif; */
 }
 
@@ -129,7 +21,6 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-
 
 .form-card {
   background: #fff;
@@ -174,7 +65,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 input {
   width: 100%;
   padding: 10px;
@@ -187,7 +77,7 @@ input {
   color: white; */
 }
 
-.form-subtext{
+.form-subtext {
   font-size: 16px;
   font-weight: bold;
   color: black;
@@ -230,8 +120,8 @@ input {
   background: #0056b3;
 }
 
-
-.forgot-password, .switch-text span {
+.forgot-password,
+.switch-text span {
   color: #007bff;
   /* color: black; */
   font-size: 0.9rem;
@@ -240,9 +130,11 @@ input {
   /* margin-top: 50px; */
 }
 
-.forgot-password:hover, .switch-text span:hover {
+.forgot-password:hover,
+.switch-text span:hover {
   text-decoration: underline;
 }
+
 
 
 @media (max-width: 480px) {
@@ -262,3 +154,11 @@ input {
     font-size: 0.9rem;
   }
 }
+
+
+
+
+
+
+
+
